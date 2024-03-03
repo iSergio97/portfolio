@@ -1,7 +1,49 @@
 ---
 import Section from "../Section.astro";
+
+import { skills } from "@cv";
+
+// ICONS
+import HTML from "../../icons/HTML.astro";
+import CSS from "../../icons/CSS.astro";
+import JavaScript from "../../icons/Javascript.astro";
+import Typescript from "../../icons/Typescript.astro";
+import React from "../../icons/ReactJS.astro";
+import Node from "../../icons/NextJS.astro";
+import MySQL from "../../icons/MySQL.astro";
+import Git from "../../icons/Git.astro";
+import GitHub from "../../icons/GitHub.astro";
+import Next from "../../icons/NextJS.astro";
+import Tailwind from "../../icons/Tailwind.astro";
+
+let SKILL_ICONS: Record<string, any> = {
+    HTML,
+    CSS,
+    JavaScript,
+    Typescript,
+    React,
+    Node,
+    MySQL,
+    Git,
+    GitHub,
+    Next,
+    Tailwind,
+};
 ---
 
-<Section>
-    <h1>Skills.astro</h1>
+<Section title="Habilidades">
+    <ul class="inline-flex gap-2 flex-wrap">
+        {
+            skills.map(({ name }) => {
+                const iconName = name === "Next.js" ? "Next" : name;
+                const Icon = SKILL_ICONS[iconName];
+
+                return (
+                    <li class="text-center bg-[#eee] rounded-md text-black flex text-xs font-medium gap-1 py-1 px-2">
+                        {Icon && <Icon />} <span>{name}</span>
+                    </li>
+                );
+            })
+        }
+    </ul>
 </Section>

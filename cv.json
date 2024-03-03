@@ -6,7 +6,7 @@
         "email": "sergiotb15@gmail.com",
         "phone": "+34 644768390",
         "url": "",
-        "summary": "Soy desarrollador Full Stack con Angular y Java + Spring Boot, con un amplio abanico de conocimientos en muchos lenguajes y frameworks.",
+        "summary": "Desde siempre he sentido mucha curiosidad sobre los ordenadores, los videojuegos y la informática. En 2016 me matriculé en la Universidad de Sevilla para estudiar Ingeniería Informática y desde entonces he estado aprendiendo y desarrollándome como profesional en el mundo de la programación. Me considero una persona muy trabajadora, responsable y con muchas ganas de aprender y mejorar en mi trabajo.",
         "location": {
             "address": "Avenida de los Emigrantes, 35 2C",
             "postalCode": "41400",
@@ -154,7 +154,7 @@
             ]
         },
         {
-            "name": "TypeScript",
+            "name": "Typescript",
             "level": "Avanzado",
             "keywords": [
                 "Desarrollo Web",
@@ -187,16 +187,6 @@
         },
         {
             "name": "MySQL",
-            "level": "Avanzado",
-            "keywords": [
-                "Bases de Datos",
-                "SQL",
-                "Almacenamiento de Datos",
-                "Backend"
-            ]
-        },
-        {
-            "name": "PostgresQL",
             "level": "Avanzado",
             "keywords": [
                 "Bases de Datos",
@@ -246,7 +236,7 @@
             ]
         },
         {
-            "name": "GitHub/GitLab",
+            "name": "GitHub",
             "level": "Avanzado",
             "keywords": [
                 "Control de Versiones",
