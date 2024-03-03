@@ -164,18 +164,7 @@
             ]
         },
         {
-            "name": "Spring Boot",
-            "level": "Avanzado",
-            "keywords": [
-                "Desarrollo Web",
-                "Backend",
-                "Java",
-                "Arquitectura",
-                "Consultas"
-            ]
-        },
-        {
-            "name": "Spring MVC",
+            "name": "Spring",
             "level": "Avanzado",
             "keywords": [
                 "Desarrollo Web",
@@ -256,7 +245,7 @@
             ]
         },
         {
-            "name": "Vue.js",
+            "name": "Vue",
             "level": "Avanzado",
             "keywords": [
                 "Desarrollo Web",
