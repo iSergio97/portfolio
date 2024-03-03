@@ -1,0 +1,85 @@
+---
+import Section from "../Section.astro";
+import WorldMap from "../../icons/WorldMap.astro";
+import Mail from "../../icons/Mail.astro";
+import Phone from "../../icons/Phone.astro";
+import Github from "../../icons/GitHub.astro";
+import LinkedIn from "../../icons/LinkedIn.astro";
+
+import { basics } from "@cv";
+
+let { name, label, image, location, profiles, phone, email } = basics;
+let { city, region } = location;
+
+let SOCIAL_ICONS: Record<string, string | any> = {
+    Github,
+    LinkedIn,
+};
+---
+
+<Section>
+    <div class="flex flex-row items-center justify-between gap-4">
+        <div class="text-wrap flex flex-col gap-2 pr-8">
+            <h1 class="text-3xl">{name}</h1>
+            <h2 class="text-md font-semibold text-[#777]">{label}</h2>
+            <span class="flex items-center gap-1 text-sm tracking-tighter text-[#777]">
+                <WorldMap />
+                {city}, {region}
+            </span>
+            <footer
+                class="flex items-start justify-start tracking-tighter gap-2 xs:justify-center"
+            >
+                {
+                    email && (
+                        <a
+                            href={`mailto:${email}`}
+                            title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-[#777] inline-flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#e5e5e5] transition-colors duration-300 ease-in-out"
+                        >
+                            <Mail />
+                        </a>
+                    )
+                }
+                {
+                    phone && (
+                        <a
+                            href={`tel:${phone}`}
+                            title={`Llamar por teléfono a ${name} al número ${phone}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-[#777] inline-flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#e5e5e5] transition-colors duration-300 ease-in-out"
+                        >
+                            <Phone />
+                        </a>
+                    )
+                }
+                {
+                    profiles.map(({ network, url }) => {
+                        const Icon = SOCIAL_ICONS[network];
+
+                        return (
+                            <a
+                                href={url}
+                                title={`Visitar el perfil de ${name} en ${network}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-[#777] inline-flex items-center justify-center w-8 h-8 rounded-full hover:bg-[#e5e5e5] transition-colors duration-300 ease-in-out"
+                            >
+                                <Icon />
+                            </a>
+                        );
+                    })
+                }
+            </footer>
+        </div>
+        <figure class="flex flex-col gap-2 pr-8">
+            <img
+                src={image}
+                alt={`Foto de ${name}`}
+                class="w-32 h-32 aspect-square object-cover rounded-2xl"
+            />
+        </figure>
+    </div>
+</Section>

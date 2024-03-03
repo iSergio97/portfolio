@@ -1,0 +1,24 @@
+---
+import About from '@/components/sections/About.astro';
+import Layout from '../layouts/Layout.astro';
+import { basics } from '@cv';
+import Hero from '@/components/sections/Hero.astro';
+import Experience from '@/components/sections/Experience.astro';
+import Skills from '@/components/sections/Skills.astro';
+import Education from '@/components/sections/Education.astro';
+
+let {name, label } = basics;
+---
+
+<Layout title={`Portfolio de ${name} - ${label}`}>
+    <main class="p-8 m-0 w-full md:p-16">
+        <Hero />
+        <About/>
+        <Experience />
+        <Education />
+        <Skills />
+    </main>
+</Layout>
+
+<style>
+</style>
