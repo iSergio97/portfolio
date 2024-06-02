@@ -29,11 +29,22 @@
     },
     "work": [
         {
-            "name": "Minsait",
+            "name": "Getronics",
             "position": "Analista/Programador Full Stack",
+            "url": "https://www.getronics.com/",
+            "startDate": "2024-04-29",
+            "endDate": null,
+            "summary": "Analista programador para el equipo, desarrollando para la empresa CNMC en una serie de proyectos, con tecnologías y frameworks como Spring Boot y Vue.js. Entre mis funciones principales, se encuentran las reuniones con el cliente para la toma de requisitos, la estimación y la adaptación del mismo al proyecto (o proyectos). Trabajamos con una amplia gama de tecnologías, pero trabajamos constantemente en evolucionar y mejorar los proyectos a versiones seguras y actuales.",
+            "highlights": [
+                "Started the company"
+            ]
+        },
+        {
+            "name": "Minsait",
+            "position": "Desarrollador Full Stack",
             "url": "https://www.minsait.com/es",
             "startDate": "2022-11-02",
-            "endDate": null,
+            "endDate": ""2024-28-04",
             "summary": "Máximo expontente en el front para el equipo desarrollando para la empresa de Repsol en el proyecto de Gestión Financiera de la producción en España",
             "highlights": [
                 "Started the company"
